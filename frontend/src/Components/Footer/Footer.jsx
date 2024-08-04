@@ -1,12 +1,12 @@
 import React from 'react';
-import logo from '../Assets/White Logo.png'
+import logo from '../Assets/White Logo.png';
 
 const Footer = () => {
   return (
     <footer style={styles.footer}>
       <div style={styles.container}>
         <div style={styles.logoSection}>
-          <img src={logo} alt="AT Digital Logo" style={styles.logo} className='logo'/>
+          <img src={logo} alt="AT Digital Logo" style={styles.logo}/>
           <p style={styles.text}>
             Your goal is our target. Not anything in between. We use online marketing platforms and tools to achieve a single objective - your business results.
           </p>
@@ -32,9 +32,9 @@ const Footer = () => {
         </div>
       </div>
       <div style={styles.footerBottom}>
-        <a href="#" style={styles.link}>Privacy Policy</a>
+        <a href="/privacy-policy" style={styles.link}>Privacy Policy</a>
         <span style={styles.divider}>|</span>
-        <a href="#" style={styles.link}>Terms & Conditions</a>
+        <a href="/terms-conditions" style={styles.link}>Terms & Conditions</a>
       </div>
     </footer>
   );
@@ -57,7 +57,9 @@ const styles = {
     flex: 1,
   },
   logo: {
-    width: '50px',
+    width: '150px',
+    height: 'auto',
+    marginLeft: '50px',
   },
   title: {
     fontSize: '24px',
@@ -101,11 +103,6 @@ const styles = {
   },
   divider: {
     margin: '0 10px',
-  },
-  logo: {
-    width: '150px',
-    height: 'auto',
-    marginLeft: '50px'
   },
 };
 
