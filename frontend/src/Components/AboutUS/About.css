@@ -1,0 +1,117 @@
+.about-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px;
+  background-color: White;
+  color: black;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.about-us-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.about-us-text {
+  flex: 1;
+  padding: 20px;
+}
+
+.about-us-text h2 {
+  font-size: 27px;
+  margin-bottom: 10px;
+  color: #6B3CC9;
+}
+
+.about-us-text h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  
+}
+
+.about-us-text p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: black;
+  text-align: justify;
+}
+
+.about-us-image {
+  flex: 1;
+  text-align: center;
+}
+
+.about-us-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.Image2{
+    margin-right: 0px;
+}
+
+.Image1{
+    margin-left: 100px;
+}
+@media(max-width: 768px) {
+  .about-us-content {
+    flex-direction: column;
+  }
+
+  .about-us-text,
+  .about-us-image {
+    padding: 10px;
+  }
+
+  .teaImage2{
+    margin-right: 0px;
+    display: none;
+
+}
+
+.teaImage1{
+    margin-left: 0px;
+    display: none;
+}
+}
+
+  
+  .about-button {
+    background-color: #ff7c00;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  
+  .about-button:hover {
+    background-color: #ff5a00;
+  }
+  
+  .about-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-image-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .about-image img {
+    max-width: 100%;
+    height: auto;
+  }
+  
