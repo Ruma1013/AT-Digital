@@ -1,0 +1,47 @@
+.faq-section {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.faq-section h2 {
+  font-size: 27px;
+  color: #6E40C9; /* Purple color for the header */
+}
+
+.faq-item {
+  padding: 10px 0;
+  background-color: #FAF8FF;
+  margin-left: 300px;
+  margin-right: 300px;
+  margin-top: 20px;
+  border-radius: 7px;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.faq-question span:first-child {
+  color: black; /* Default color for questions */
+}
+
+.faq-question span:last-child {
+  margin-right: 20px; /* Add right margin for the toggle icon */
+}
+
+.faq-answer {
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: left;
+  color: #6F6C90;
+}
+
+/* Active state styles */
+.faq-item.active .faq-question span:first-child {
+  color: #6E40C9; /* Purple color for the active question */
+}
