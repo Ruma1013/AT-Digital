@@ -19,13 +19,15 @@ const About = () => {
       </div>
 
       <div className="about-us-content">
-        <div className="about-us-image Image1">
-          <img src={img1} alt="Digital Strategy Consulting" className='Image1'/>
-        </div>
+        
         <div className="about-us-text">
           <h2>Digital Strategy Consulting</h2>
           <p>Your web and mobile Apps are pieces of the puzzle to grow your business. We use frameworks which tailor content and engagement methods to respond to different intents shown by your potential customers who interact with your business online.</p>
           <button className="about-button">Learn More</button>
+        </div>
+
+        <div className="about-us-image Image1">
+          <img src={img1} alt="Digital Strategy Consulting" className='Image1'/>
         </div>
       </div>
 
