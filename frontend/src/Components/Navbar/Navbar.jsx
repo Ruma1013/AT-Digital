@@ -1,30 +1,27 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import './Navbar.css'; // Import the CSS file for styling
+import './Navbar.css';
+import { FaBars, FaTimes } from "react-icons/fa"; // Import the hamburger icon from react-icons
 import logo from '../Assets/White Logo.png';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
-
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const toggleMenu = () => {
+  const toggleNavbar = () => {
     setIsOpen(!isOpen);
   };
 
   return (
     <nav className="navbar">
       <div className="navbar-left">
-        <img src={logo} alt="AT Digital Logo" className="logo" style={{ marginRight: '5px', width: '150px' }}/>
-        <div className="hamburger" onClick={toggleMenu}>
-          <FontAwesomeIcon icon={isOpen ? faTimes : faBars} />
-        </div>
+        <img src={logo} alt="Logo" className="logo" />
       </div>
       <div className={`navbar-links ${isOpen ? 'open' : ''}`}>
-        <Link to="/services">SERVICES</Link>
-        <Link to="/about-us">ABOUT US</Link>
-        <Link to="/contact-us">CONTACT US</Link>
-        <Link to="/careers" className='last'>CAREERS</Link> 
+        <a href="#services">SERVICES</a>
+        <a href="#about">ABOUT US</a>
+        <a href="#contact">CONTACT US</a>
+        <a href="#careers">CAREERS</a>
+      </div>
+      <div className="hamburger" onClick={toggleNavbar}>
+      {isOpen ? <FaTimes /> : <FaBars />}
       </div>
     </nav>
   );
