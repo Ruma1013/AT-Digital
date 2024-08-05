@@ -47,11 +47,13 @@
 }
 
 .Image2 {
+  margin-left: 0px; /* Push the second image to the right */
   margin-right: 0px;
 }
 
 .Image1 {
-  margin-left: 100px;
+  margin-left: 0px;
+  margin-right: 0px; /* Push the first image to the left */
 }
 
 @media (max-width: 768px) {
@@ -92,11 +94,9 @@
     text-align: center;
   }
 
-  .about-us-text p{
+  .about-us-text p {
     text-align: center;
   }
-
-  
 }
 
 .about-button {
