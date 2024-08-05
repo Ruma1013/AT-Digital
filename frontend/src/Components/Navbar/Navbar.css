@@ -1,4 +1,6 @@
 /* Default styles */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -8,6 +10,7 @@
   position: fixed;
   width: 100%;
   z-index: 10;
+  font-family: 'Inter';
 }
 
 .navbar-left {
