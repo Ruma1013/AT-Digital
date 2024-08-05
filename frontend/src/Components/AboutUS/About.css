@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   padding: 50px 20px;
-  background-color: White;
+  background-color: white;
   color: black;
   font-family: 'Open Sans', sans-serif;
 }
@@ -29,12 +29,6 @@
   color: #6B3CC9;
 }
 
-.about-us-text h1 {
-  font-size: 2.5em;
-  margin-bottom: 20px;
-  
-}
-
 .about-us-text p {
   font-size: 16px;
   line-height: 1.6;
@@ -52,66 +46,69 @@
   height: auto;
 }
 
-.Image2{
-    margin-right: 0px;
+.Image2 {
+  margin-right: 0px;
 }
 
-.Image1{
-    margin-left: 100px;
+.Image1 {
+  margin-left: 100px;
 }
-@media(max-width: 768px) {
+
+@media (max-width: 768px) {
   .about-us-content {
-    flex-direction: column;
+    flex-direction: column; /* Stack each content block vertically */
   }
 
-  .about-us-text,
-  .about-us-image {
-    padding: 10px;
+  .about-us-content .about-us-image,
+  .about-us-content .about-us-text {
+    width: 100%; /* Make image and text full width */
   }
 
-  .teaImage2{
-    margin-right: 0px;
-    display: none;
+  .about-us-content:nth-child(1) .about-us-image {
+    order: 1; /* First image */
+  }
 
-}
+  .about-us-content:nth-child(1) .about-us-text {
+    order: 2; /* First text */
+  }
 
-.teaImage1{
+  .about-us-content:nth-child(2) .about-us-image {
+    order: 3; /* Second image */
+    margin-top: 20px; /* Add some spacing between the text and image */
+  }
+
+  .about-us-content:nth-child(2) .about-us-text {
+    order: 4; /* Second text */
+  }
+
+  .Image1, .Image2 {
     margin-left: 0px;
-    display: none;
-}
-}
-
-  
-  .about-button {
-    background-color: #ff7c00;
-    color: white;
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    text-transform: uppercase;
-  }
-  
-  .about-button:hover {
-    background-color: #ff5a00;
-  }
-  
-  .about-image {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-right: 0px;
+    width: 200px;
+    margin: 0 auto; /* Center the images */
   }
 
-  .about-image-left {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .about-us-text {
+    text-align: center;
   }
-  
-  .about-image img {
-    max-width: 100%;
-    height: auto;
+
+  .about-us-text p{
+    text-align: center;
   }
+
   
+}
+
+.about-button {
+  background-color: #ff7c00;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.about-button:hover {
+  background-color: #ff5a00;
+}

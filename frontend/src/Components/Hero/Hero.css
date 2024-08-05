@@ -24,7 +24,7 @@
 .hero-content h1 {
     margin-top: 0;
     color: white;
-    font-size: 2rem;
+    font-size: 48px;
     margin-bottom: 1rem;
 }
 
@@ -46,7 +46,7 @@
     .hero-container {
         justify-content: center;
         padding-left: 0rem;
-        padding-right: 1rem;
+        padding-right: 0rem;
     }
 
     .hero-content {
@@ -62,7 +62,7 @@
     }
 
     .hero-content h1 {
-        font-size: 1.5rem;
+        font-size: 36px;
         line-height: 1.2;
     }
 
